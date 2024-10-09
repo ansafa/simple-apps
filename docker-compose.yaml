@@ -1,0 +1,12 @@
+services:
+  simple-apps:
+    image: ansafa3amarra/simple-apps
+    build: ./apps
+    ports:
+      - 3000:3000
+    volumes:
+      - vol-simple-apss:/apps/public
+
+volumes:
+  vol-simple-apss:
+  
